@@ -23,7 +23,7 @@
 &none   &mt TAB Q &kp W &kp E &kp R &kp T              &kp Y &kp U    &mt AMPS I   &mt PIPE O    &mt UNDER P     &none 
 &none   &mt CAPS A &kp S &kp D &kp F &kp G             &kp H &kp J    &mt LT K     &kp L         &mt COLON SEMI  &none
 &none   &mt LCTRL Z &kp X &kp C &kp V &kp B            &kp N &kp M    &mt GT COMMA &mt QMARK DOT &mt DQT SQT     &none
-        &to LOWER &mt ESC BSPC &mt LSHIFT SPACE        &mt RSHIFT RET &mt RCTRL RCMD &to RAISE
+        &tog LOWER &mt ESC BSPC &mt LSHIFT SPACE        &mt RSHIFT RET &mt RCTRL RCMD &tog RAISE
                         >;
                 };
                 LOWER {
