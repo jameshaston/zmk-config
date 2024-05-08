@@ -7,6 +7,11 @@
 #define LOWER 1
 #define RAISE 2
 
+&mt {
+  tapping-term-ms = <300>;
+  flavor = "tap-preferred";      
+};
+
 / {
         keymap {
                 compatible = "zmk,keymap";
@@ -18,22 +23,22 @@
 // |    Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |
 //                    | SHFT | LWR | SPC |   | ENT | RSE  | SHFT |
                         bindings = <
-&none   &mt EXCL Q &kp W &mt EQUAL E &kp R &kp T              &kp Y &mt UNDER U    &kp I   &kp O    &mt PIPE P     &none 
-&none   &mt AMPS A &kp S &kp D &kp F &mt GT G             &mt TAB H &kp J    &mt LT K     &mt LT L         &mt COLON SEMI  &none
-&none   &mt LCTRL Z &kp X &kp C &kp V &kp B            &kp N &mt MINUS M    &mt GT COMMA &mt QMARK DOT &mt DQT SQT     &none
-        &mo RAISE &mt ESC BSPC &mt LSHIFT SPACE        &mt RSHIFT RET &mt RCTRL RCMD &mo LOWER
+&none   &mt EXCL Q &kp W &mt EQUAL E &kp R &mt TILDE T              &kp Y &mt UNDER U    &kp I   &kp O    &mt PIPE P     &none 
+&none   &mt AMPS A &kp S &kp D &kp F &mt GT G             &mt TAB H &mt FSLH J    &kp K     &mt LT L         &mt COLON SEMI  &none
+&none   &mt LCTRL Z &kp X &kp C &kp V &mt BSLH B            &kp N &mt MINUS M    &kp COMMA &mt QMARK DOT &mt DQT SQT     &none
+        &mo RAISE &mt LCTRL BSPC &mt LSHIFT SPACE        &mt RSHIFT RET &mt RCMD ESC &mo LOWER
                         >;
                 };
-                LOWER {
+LOWER {
 // -----------------------------------------------------------------------------------------
 // |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |
 // | BT1 | BT2 |     |     |     |   | LFT | DWN |  UP | RGT |     |
 // | BTCA| BTC |     |     |     |   |     |     |     |     |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-&none   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5               &kp N6   &kp N7   &kp N8 &kp N9    &kp N0     &none
-&none   &bt BT_SEL 0 &bt BT_SEL 1 &trans &trans &trans   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans  &none
-&none   &trans &trans &trans &trans &trans   &trans   &trans  &trans &trans    &bt BT_CLR_ALL     &none
+&none   &mt GRAVE N1 &kp N2 &kp N3 &kp N4 &kp N5               &kp N6   &kp N7   &kp N8 &kp N9    &kp N0     &none
+&none   &trans &trans &trans &trans &trans   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans  &none
+&none   &trans &trans &trans &trans &trans   &trans   &trans  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_CLR_ALL     &none
                   &trans &trans &trans       &trans  &trans   &trans
                         >;
                 };
