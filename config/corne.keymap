@@ -34,10 +34,10 @@
                 };
                 RAISE {
                         bindings = <
-&none   &trans          &trans          &trans          &trans           &trans      &trans    &kp LPAR &kp RPAR  &trans &kp PRCNT &none 
-&none   &kp KP_MULTIPLY          &trans          &kp DLLR        &trans           &kp GRAVE   &kp HASH  &kp LBRC &kp RBRC  &trans &trans    &none
-&none   &trans &trans &trans &trans  &trans      &kp MINUS &kp LBKT &kp RBKT  &trans &trans    &none
-                   &trans &trans &trans                                                &trans   &trans    &trans
+&none   &trans          &trans   &trans   &trans  &trans      &trans    &kp LPAR &kp RPAR  &trans &kp PRCNT &none 
+&none   &kp KP_MULTIPLY &kp PLUS &kp DLLR &trans  &kp GRAVE   &kp HASH  &kp LBRC &kp RBRC  &trans &trans    &none
+&none   &trans          &trans   &trans   &trans  &trans      &kp MINUS &kp LBKT &kp RBKT  &trans &trans    &none
+                               &trans &trans &trans              &trans   &trans    &trans
                         >;
                 };
         };
